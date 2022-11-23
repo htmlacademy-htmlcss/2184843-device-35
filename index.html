@@ -4,12 +4,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <header class="header main-header">
       <a class="logo" href="#">
-        <img class="header-logo" src="" alt="Логотип Девайс.">
+        <img class="header-logo" src="" alt="Логотип «Девайс».">
       </a>
 
       <ul class="user-menu">
@@ -36,12 +37,29 @@
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог товаров</a>
             <ul class="submenu">
-              <li class="submenu-item">Виртуальная реальность</li>
-              <li class="submenu-item">Моноподы для селфи</li>
-              <li class="submenu-item">Экшн-камеры</li>
-              <li class="submenu-item">Фитнес-браслеты</li>
-              <li class="submenu-item">Умные часы</li>
-              <li class="submenu-item">Квадрокоптеры</li>
+              <li class="submenu-item">
+                <a class="submenu-link" href="">Виртуальная реальность</a>
+              </li>
+
+              <li class="submenu-item">
+                <a class="submenu-link" href="">Моноподы для селфи</a>
+              </li>
+
+              <li class="submenu-item">
+                <a class="submenu-link" href="">Экшн-камеры</a>
+              </li>
+
+              <li class="submenu-item">
+                <a class="submenu-link" href="">Фитнес-браслеты</a>
+              </li>
+
+              <li class="submenu-item">
+                <a class="submenu-link" href="">Умные часы</a>
+              </li>
+
+              <li class="submenu-item">
+                <a class="submenu-link" href="">Квадрокоптеры</a>
+              </li>
             </ul>
           </li>
         </ul>
@@ -61,13 +79,13 @@
     </header>
 
     <main class="main-container main-index">
-      <h1 class="visually-hidden">Интернет-магазин гаджетов "Девайс".</h1>
+      <h1 class="visually-hidden">Интернет-магазин гаджетов «Девайс».</h1>
       <section class="slider">
         <h2 class="visually-hidden">Популярные товары.</h2>
 
         <div class="slider-product">
           <img class="slider-image" src="images/slider-1.png" width="560" height="560" alt="Квадрокоптер с лазером.">
-          <h3 class="slider-product-title">Порхает как бабочка,<br>жалит как пчела!</h3>
+          <h3 class="title slider-product-title">Порхает как бабочка,<br>жалит как пчела!</h3>
           <p class="slider-product-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
             замаскированным под стандартную камеру.</p>
           <a href="#" class="button slider-link">Подробнее</a>
@@ -95,7 +113,7 @@
 
         <div class="slider-product hidden">
           <img class="slider-image" src="images/slider-2.png" width="560" height="560" alt="Фитнес-браслет.">
-          <h3 class="slider-product-title">Худеем правильно!</h3>
+          <h3 class="title slider-product-title">Худеем правильно!</h3>
           <p class="slider-product-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
           <a href="#" class="button slider-link">Подробнее</a>
 
@@ -117,7 +135,7 @@
 
         <div class="slider-product hidden">
           <img class="slider-image" src="images/slider-3.png" width="560" height="560" alt="Палка для селфи.">
-          <h3 class="slider-product-title">Делай селфи, как Бен Стиллер!</h3>
+          <h3 class="title slider-product-title">Делай селфи, как Бен Стиллер!</h3>
           <p class="slider-product-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
           <a href="#" class="button slider-link">Подробнее</a>
 
@@ -195,18 +213,18 @@
 
         <ul class="services-list">
           <li class="services-item">
-            <a class="services-link" href="">Доставка</a>
+            <a class="button services-link services-link-current" href="">Доставка</a>
           </li>
           <li class="services-item">
-            <a class="services-link" href="">Гарантия</a>
+            <a class="button services-link" href="">Гарантия</a>
           </li>
           <li class="services-item">
-            <a class="services-link" href="">Кредит</a>
+            <a class="button services-link" href="">Кредит</a>
           </li>
         </ul>
 
         <div class="delivery">
-          <h3 class="services-title">Доставка</h3>
+          <h3 class="title services-title">Доставка</h3>
           <p class="services-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
             бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </div>
@@ -215,7 +233,7 @@
       <button class="delivery-button" type="button">Доставим редкий товар под заказ</button>
 
       <section class="about-us">
-        <h2 class="about-us-title">О нас</h2>
+        <h2 class="title about-us-title">О нас</h2>
         <p class="about-us-description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из
           нас.</p>
         <p class="about-us-description">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными
@@ -229,7 +247,7 @@
       </section>
 
       <section class="contacts">
-        <h2 class="contacts-title">Контакты</h2>
+        <h2 class="title contacts-title">Контакты</h2>
         <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить
           работоспособность покупки.</p>
         <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
@@ -246,7 +264,7 @@
       </section>
 
       <section class="subscription">
-        <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+        <h2 class="title subscription-title">Подпишитесь на рассылку</h2>
         <p class="subscription-description">Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами,
           распаковками, а также акции,<br>спецпредложения и вот это вот всё.</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
