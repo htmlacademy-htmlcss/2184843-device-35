@@ -22,7 +22,27 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -50,12 +70,39 @@ body {
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
+  margin: 0;
+  padding: 0;
 }
 
 /* Навигация */
 .header {
   color: #000000;
   background-color: #ffe17f;
+  margin-top: 40px;
+}
+
+.header-wrapper {
+  width: 1040px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+
+.header-logo {
+  position: absolute;
+  top: -20px;
+}
+
+.user-menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  padding-top: 30px;
+}
+
+.user-menu-wrapper {
+  margin-left: auto;
+  max-width: 245px;
 }
 
 .user-menu-link {
@@ -65,6 +112,15 @@ body {
 
 .logout-link {
   opacity: 0.3;
+}
+
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  gap: 45px;
 }
 
 .navigation-link {
@@ -77,6 +133,10 @@ body {
   color: #000000;
 }
 
+.catalog-item {
+  margin-right: 288px;
+}
+
 .submenu-link {
   color: #000000;
   font-size: 16px;
@@ -84,10 +144,46 @@ body {
   text-decoration: none;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 /* Слайдер */
+.slider-product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.slider-product-wrapper {
+  width: 560px;
+}
+
+.slider-product-title {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.slider-product-description {
+  padding: 0;
+  margin: 0 0 50px 0;
+}
+
+.specifications {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .product-specifications b{
   color: #000000;
   font-size: 36px;
+  font-weight: 400;
   line-height: 30px;
 }
 
@@ -98,6 +194,27 @@ body {
 }
 
 /* Категории */
+.categories {
+  margin-bottom: 70px;
+}
+
+.categories-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.categories-list-item {
+  width: 160px;
+}
+
+.categories-img {
+  background-color: #ffe17f;
+}
+
 .categories-link {
   font-family: "Raleway", sans-serif;
   color: #000000;
@@ -109,9 +226,42 @@ body {
 }
 
 /* Услуги */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 319px;
+}
+
+.services-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 65px 116px 65px 0;
+}
+
+.services-item:not(:last-child) {
+  margin-bottom: 35px;
+}
+
 .services-link-current{
   color: #ffe17f;
   background-color: #000000;
+}
+
+.about-service {
+  width: 450px;
+  padding-right: 246px;
+  align-self: center;
+}
+
+.services-title {
+  padding: 0;
+  margin: 0 0 34px 0;
+}
+
+.services-description {
+  padding: 0;
+  margin: 0;
 }
 
 .delivery-button {
