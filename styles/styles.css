@@ -38,7 +38,6 @@ html {
 }
 
 body {
-  width: 1160px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -78,13 +77,15 @@ body {
 .header {
   color: #000000;
   background-color: #ffe17f;
+  margin: 0 auto;
   margin-top: 40px;
+  width: 1160px;
 }
 
 .header-wrapper {
   width: 1040px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 0 150px 0;
   position: relative;
 }
 
@@ -149,11 +150,15 @@ body {
 }
 
 .page-container {
-  width: 1160px;
   margin: 0 auto;
 }
 
 /* Слайдер */
+.slider {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .slider-product {
   display: flex;
   flex-wrap: wrap;
@@ -193,9 +198,15 @@ body {
   line-height: 30px;
 }
 
+.slider-pagination {
+  display: flex;
+}
+
 /* Категории */
 .categories {
-  margin-bottom: 70px;
+  width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 170px;
 }
 
 .categories-list {
@@ -227,10 +238,17 @@ body {
 
 /* Услуги */
 .services {
+  background-color: #f0f0f0;
+  margin-bottom: 70px;
+}
+
+.services-wrapper {
+  width: 1160px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   min-height: 319px;
+  margin: 0 auto;
 }
 
 .services-list {
@@ -265,6 +283,13 @@ body {
 }
 
 .delivery-button {
+  display: block;
+  width: 1160px;
+  min-height: 100px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  padding: 40px 125px;
+  box-sizing: border-box;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 20px;
@@ -272,9 +297,42 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+}
+
+/* О нас и Контакты */
+.about-us-wrapper {
+  width: 1160px;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  padding-top: 47px;
+  justify-content: space-between;
+}
+
+.about-us {
+  width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about-us-title {
+  margin-bottom: 18px;
 }
 
 /* Способы доставки*/
+.about-us-description {
+  padding: 0;
+  margin: 0;
+}
+
+.delivery-options {
+  padding: 0;
+  margin: 0;
+}
+
 .delivery-options-item {
   font-weight: 700;
   line-height: 20px;
@@ -282,19 +340,79 @@ body {
   color: #000000;
 }
 
+.delivery-options-item:not(:last-child) {
+  margin-bottom: 19px;
+}
+
 /* Контакты */
+.contacts {
+  width: 532px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contacts-description {
+  margin: 0;
+  padding: 0;
+}
+
 .contacts-subtitle {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .contacts-address {
   font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts-address-text {
+  margin: 0;
+  padding: 0;
 }
 
 .contacts-phone {
   color: #444444;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts-schedule {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* Блок подписки */
+.subscription {
+  background-color: #f0f0f0;
+}
+
+.subscription-wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 56px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subscription-title {
+  width: 348px;
+}
+
+.subscription-description {
+  margin: 0;
+  margin-left: auto;
+  width: 560px;
+}
+
+.subscription-form {
+  margin-top: 144px;
 }
 
 /* Футер */
@@ -303,9 +421,21 @@ body {
   background-color: #444444;
 }
 
+.footer-wrapper {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 62px 0;
+}
+
+.footer-contacts {
+  width: 240px;
+}
+
 .about-text {
   font-style: normal;
   font-size: 16px;
+  font-weight: 400;
   line-height: 20px;
 }
 
@@ -431,4 +561,8 @@ body {
 
 .pagination-disabled {
   opacity: 0.3;
+}
+
+.hidden {
+  display: none;
 }
