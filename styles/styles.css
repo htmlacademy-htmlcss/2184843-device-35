@@ -157,6 +157,11 @@ body {
 .slider {
   width: 1160px;
   margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.slider-image {
+  margin-right: 40px;
 }
 
 .slider-product {
@@ -200,6 +205,14 @@ body {
 
 .slider-pagination {
   display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.slider-link {
+  display: block;
+  margin-bottom: 50px;
 }
 
 /* Категории */
@@ -220,10 +233,13 @@ body {
 
 .categories-list-item {
   width: 160px;
+  line-height: 24px;
 }
 
 .categories-img {
   background-color: #ffe17f;
+  display: block;
+  margin-bottom: 33px;
 }
 
 .categories-link {
@@ -409,10 +425,18 @@ body {
   margin: 0;
   margin-left: auto;
   width: 560px;
+  align-self: center;
 }
 
 .subscription-form {
   margin-top: 144px;
+  display: flex;
+  width: 1160px;
+}
+
+.free-note {
+  margin-left: auto;
+
 }
 
 /* Футер */
@@ -422,10 +446,15 @@ body {
 }
 
 .footer-wrapper {
-  display: flex;
+  display: grid;
   width: 1160px;
+  grid-template-columns: 234px 751px 175px;
   margin: 0 auto;
   padding: 62px 0;
+}
+
+.social-list {
+  order: 2;
 }
 
 .footer-contacts {
@@ -456,6 +485,32 @@ body {
 }
 
 /* Каталог */
+.page-header-wrapper {
+  padding-bottom: 36px;
+}
+
+.inner-header {
+  margin: 0 auto;
+  width: 1160px;
+  padding: 34px 60px;
+}
+
+.inner-header-title {
+  margin-bottom: 16px;
+}
+
+/* Хлебные крошки */
+.breadcrumbs {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumbs-item:not(:last-child) {
+  padding-right: 36px;
+}
+
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 20px;
@@ -463,6 +518,7 @@ body {
   text-decoration: none;
 }
 
+/* Фильтры */
 .filter-title {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -471,6 +527,10 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+}
+
+.filter {
+  width: 320px;
 }
 
 .catalog-filter-title {
@@ -487,10 +547,25 @@ body {
   color: #000000;
 }
 
+.catalog-right-column {
+  width: 840px;
+}
+
+/* Сортировка */
+.sort-container {
+  width: 840px;
+}
+
 /* Товары */
 .catalog-products {
   color: #000000;
   background-color: #f0f0f0;
+}
+
+.catalog-wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
 }
 
 .product-list-wrapper {
