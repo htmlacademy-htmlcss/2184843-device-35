@@ -85,7 +85,7 @@ body {
 .header-wrapper {
   width: 1040px;
   margin: 0 auto;
-  padding: 0 0 150px 0;
+  padding: 0 0 143px 0;
   position: relative;
 }
 
@@ -97,8 +97,43 @@ body {
 .user-menu {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
-  padding-top: 30px;
+  margin-bottom: 41px;
+  padding-top: 46px;
+  align-items: center;
+}
+
+/* Форма поиска */
+.search-form {
+  width: 517px;
+  display: flex;
+  margin-right: 25px;
+}
+
+.search-input {
+  width: 360px;
+  height: 40px;
+  padding: 10px 10px 10px 48px;
+  border: 2px solid #000000;
+  border-radius: 50px 0 0 50px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+.search-form-button {
+  height: 40px;
+  padding: 10px 55px;
+  border: 2px solid #000000;
+  border-radius: 0 50px 50px 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  background-color: transparent;
+  box-sizing: border-box;
 }
 
 .user-menu-wrapper {
@@ -111,16 +146,49 @@ body {
   text-decoration: none;
 }
 
+
+.catalog-menu {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.user-menu-link:not(:last-child) {
+  margin-right: 12px;
+}
+
+.login-link {
+  padding-left: 28px;
+}
+
 .logout-link {
   opacity: 0.3;
 }
 
-.navigation-list {
+.compare-link {
+  padding-left: 25px;
+}
+
+.cart-link {
+  padding-left: 45px;
+}
+
+.navigation {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
   list-style-type: none;
+  align-items: center;
+}
+
+.nav {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
   gap: 45px;
 }
 
@@ -135,7 +203,11 @@ body {
 }
 
 .catalog-item {
-  margin-right: 288px;
+  margin-right: 276px;
+}
+
+.menu-button {
+  height: 10px;
 }
 
 .submenu-link {
@@ -162,21 +234,38 @@ body {
 
 .slider-image {
   margin-right: 40px;
+  position: relative;
+  top: -122px;
+}
+
+.slider-number {
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 30px;
+  color: #ffffff;
+  position: absolute;
+  top: -40px;
+  right: 50px;
 }
 
 .slider-product {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  position: relative;
+  top: -28px;
 }
 
 .slider-product-wrapper {
   width: 560px;
+  position: relative;
 }
 
 .slider-product-title {
   padding: 0;
   margin: 0 0 30px 0;
+  position: relative;
+  z-index: 1;
 }
 
 .slider-product-description {
@@ -190,17 +279,19 @@ body {
   gap: 20px;
 }
 
-.product-specifications b{
+.product-specifications b {
   color: #000000;
   font-size: 36px;
   font-weight: 400;
   line-height: 30px;
 }
 
-.product-specifications p{
+.product-specifications p {
   color: #444444;
   font-size: 16px;
   line-height: 30px;
+  padding: 0;
+  margin: 0;
 }
 
 .slider-pagination {
@@ -277,7 +368,7 @@ body {
   margin-bottom: 35px;
 }
 
-.services-link-current{
+.services-link-current {
   color: #ffe17f;
   background-color: #000000;
 }
@@ -286,6 +377,12 @@ body {
   width: 450px;
   padding-right: 246px;
   align-self: center;
+}
+
+.delivery-service {
+  background-image: url(../images/delivery-man.svg);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .services-title {
@@ -448,17 +545,30 @@ body {
 .footer-wrapper {
   display: grid;
   width: 1160px;
-  grid-template-columns: 234px 751px 175px;
+  grid-template-columns: 240px 444px 238px;
+  gap: 25px 119px;
   margin: 0 auto;
   padding: 62px 0;
 }
 
-.social-list {
-  order: 2;
-}
-
 .footer-contacts {
   width: 240px;
+}
+
+.footer-logo-link {
+  grid-column: 1/2;
+  justify-self: start;
+}
+
+.footer-contacts-address {
+  width: 240px;
+  grid-column: 1/2;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .about-text {
@@ -466,6 +576,17 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-menu-link {
@@ -482,6 +603,57 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  justify-self: end;
+  align-self: center;
+}
+
+.social-list {
+  grid-column: 2/3;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  list-style-type: none;
+  justify-self: center;
+  align-items: center;
+}
+
+.social-item {
+  background-color: #ffffff;
+  opacity: 0.3;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.telegram-link {
+  background-image: url(../images/telegram-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.youtube-link {
+  background-image: url(../images/youtube-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.twitter-link {
+  background-image: url(../images/twitter-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.html-link {
+  grid-column: 3/-1;
+  justify-self: end;
+  margin-top: 25px;
 }
 
 /* Каталог */
@@ -554,6 +726,7 @@ body {
 /* Сортировка */
 .sort-container {
   width: 840px;
+  display: flex;
 }
 
 /* Товары */
@@ -570,6 +743,17 @@ body {
 
 .product-list-wrapper {
   background-color: #ffffff;
+  padding: 70px 40px 78px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: 360px 360px;
+  padding: 0;
+  margin: 0;
+  gap: 40px;
+  list-style-type: none;
+  margin-bottom: 44px;
 }
 
 .product-card-link {
@@ -599,12 +783,26 @@ body {
   background-color: #ffffff;
   border: 3px solid #E5E5E5;
   cursor: pointer;
+  width: 100%;
+  padding: 18px 0;
+  margin-bottom: 44px;
 }
 
 /* Пагинация */
 .pagination {
   color: #000000;
   background-color: #ebebeb;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 25px;
+  margin: 0;
+}
+
+.pagination-item {
+  min-width: 40px;
+  text-align: center;
 }
 
 .pagination-link {
@@ -620,8 +818,16 @@ body {
   opacity: 0.6;
 }
 
-.pagination-prev,
+.pagination-prev {
+  margin-right: auto;
+}
+
 .pagination-next {
+  margin-left: auto;
+}
+
+.pagination-prev-link,
+.pagination-next-link {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
