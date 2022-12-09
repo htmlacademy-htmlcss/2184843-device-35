@@ -292,6 +292,14 @@ body {
   color: #000000;
 }
 
+.navigation-link:hover {
+  opacity: 0.6;
+}
+
+.navigation-link:active {
+  opacity: 0.3;
+}
+
 .catalog-link {
   position: relative;
 }
@@ -503,6 +511,14 @@ body {
   line-height: 24px;
 }
 
+.categories-list-item:hover .categories-img {
+  background-color: #ffc700;
+}
+
+.categories-list-item:active {
+  opacity: 0.3;
+}
+
 .categories-img {
   background-color: #ffe17f;
   display: block;
@@ -575,10 +591,9 @@ body {
 .delivery-button {
   display: block;
   width: 1160px;
-  min-height: 100px;
   margin: 0 auto;
   margin-bottom: 70px;
-  padding: 40px 125px;
+  padding: 40px 200px;
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -589,6 +604,43 @@ body {
   background-color: #f0f0f0;
   border: none;
   cursor: pointer;
+  position: relative;
+}
+
+.delivery-button::before {
+  content: "";
+  width: 125px;
+  height: 103px;
+  background-color: #ffe17f;
+  background-image: url("../images/delivery-car.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.delivery-button:hover::before {
+  background-color: #ffc700;
+}
+
+.delivery-button:active {
+  opacity: 0.3;
+}
+
+.delivery-button::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #dcdcdc;
+  background-image: url("../images/info-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: 43px;
+  top: 30px;
+  opacity: 0.5;
 }
 
 /* О нас и Контакты */
