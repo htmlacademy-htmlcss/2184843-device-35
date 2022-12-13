@@ -110,15 +110,15 @@
               <section class="specifications">
                 <h4 class="visually-hidden">Характеристики товара.</h4>
 
-                <div class="product-specifications">
-                  <b class="specifications-value">800 м</b>
-                  <p class="specifications-name">Дальность полета</p>
-                </div>
+                <dl class="product-specifications">
+                  <dt class="specifications-value">800 м</dt>
+                  <dd class="specifications-name">Дальность полета</dd>
+                </dl>
 
-                <div class="product-specifications">
-                  <b class="specifications-value">50 м</b>
-                  <p class="specifications-name">Радиус поражения</p>
-                </div>
+                <dl class="product-specifications">
+                  <dt class="specifications-value">50 м</dt>
+                  <dd class="specifications-name">Радиус поражения</dd>
+                </dl>
               </section>
             </div>
 
@@ -146,22 +146,12 @@
               <section class="specifications">
                 <h4 class="visually-hidden">Характеристики товара.</h4>
 
-                <div class="product-specifications">
-                  <b class="specifications-value">48 часов</b>
-                  <p class="specifications-name">Без подзарядки</p>
-                </div>
+                <dl class="product-specifications">
+                  <dt class="specifications-value">48 часов</dt>
+                  <dd class="specifications-name">Без подзарядки</dd>
+                </dl>
               </section>
             </div>
-
-            <div class="slider-controls">
-              <button class="slider-button slider-prev" type="button">
-                <span class="visually-hidden">Предыдущий товар.</span>
-              </button>
-              <button class="slider-button slider-next" type="button">
-                <span class="visually-hidden">Следующий товар.</span>
-              </button>
-            </div>
-
           </div>
 
           <div class="slider-product hidden">
@@ -177,31 +167,21 @@
               <section class="specifications">
                 <h4 class="visually-hidden">Характеристики товара.</h4>
 
-                <div class="product-specifications">
-                  <b class="specifications-value">8,5 м</b>
-                  <p class="specifications-name">Длина палки</p>
-                </div>
+                <dl class="product-specifications">
+                  <dt class="specifications-value">8,5 м</dt>
+                  <dd class="specifications-name">Длина палки</dd>
+                </dl>
 
-                <div class="product-specifications">
-                  <b class="specifications-value">5 кг</b>
-                  <p class="specifications-name">Вес палки</p>
-                </div>
+                <dl class="product-specifications">
+                  <dt class="specifications-value">5 кг</dt>
+                  <dd class="specifications-name">Вес палки</dd>
+                </dl>
 
-                <div class="product-specifications">
-                  <b class="specifications-value">Карбон</b>
-                  <p class="specifications-name">Материал</p>
-                </div>
+                <dl class="product-specifications">
+                  <dt class="specifications-value">Карбон</dt>
+                  <dd class="specifications-name">Материал</dd>
+                </dl>
               </section>
-            </div>
-
-
-            <div class="slider-controls">
-              <button class="slider-button slider-prev" type="button">
-                <span class="visually-hidden">Предыдущий товар.</span>
-              </button>
-              <button class="slider-button slider-next" type="button">
-                <span class="visually-hidden">Следующий товар.</span>
-              </button>
             </div>
           </div>
 
@@ -271,20 +251,19 @@
           <div class="services-wrapper">
             <ul class="services-list">
               <li class="services-item">
-                <a class="button services-link services-link-current" href="">Доставка</a>
+                <button class="button services-link services-link-current" type="button">Доставка</button>
               </li>
               <li class="services-item">
-                <a class="button services-link" href="">Гарантия</a>
+                <button class="button services-link" type="button">Гарантия</button>
               </li>
               <li class="services-item">
-                <a class="button services-link" href="">Кредит</a>
+                <button class="button services-link" type="button">Кредит</button>
               </li>
             </ul>
 
             <div class="about-service delivery-service">
               <h3 class="title services-title">Доставка</h3>
-              <p class="services-description">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду
-                совершенно
+              <p class="services-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
                 бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
           </div>
@@ -305,7 +284,7 @@
               <li class="delivery-options-item">СДИК</li>
               <li class="delivery-options-item">ТоксБерри</li>
             </ul>
-            <a class="button" href="#">Подробнее о нас</a>
+            <a class="button about-us-button" href="#">Подробнее о нас</a>
           </section>
 
           <section class="contacts">
@@ -322,7 +301,7 @@
               <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
               <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
             </ul>
-            <a class="button" href="#">Напишите нам</a>
+            <a class="button contact-us-button" href="#">Напишите нам</a>
           </section>
         </div>
 
@@ -345,8 +324,7 @@
     <footer class="page-footer">
       <div class="footer-wrapper">
         <a class="footer-logo-link" href="index.html">
-          <img class="footer-contacts-logo" src="images/logo-yellow.svg" width="145" height="36"
-            alt="Логотип «Девайс».">
+          <img class="footer-logo" src="images/logo-yellow.svg" width="145" height="36" alt="Логотип «Девайс».">
         </a>
         <address class="footer-contacts-address">
           <a class="about-text" href="#">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
