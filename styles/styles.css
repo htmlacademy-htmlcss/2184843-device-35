@@ -564,7 +564,7 @@ body {
 
 /* Услуги */
 .services {
-  margin-bottom: 67px;
+  margin-bottom: 70px;
   position: relative;
   min-height: 390px;
 }
@@ -588,8 +588,8 @@ body {
 
 .services-list {
   list-style-type: none;
-  padding: 65px 130px 65px 0;
-  margin: 0 113px 0 0;
+  padding: 65px 127px 65px 0;
+  margin: 0 115px 0 0;
   position: relative;
 }
 
@@ -611,9 +611,14 @@ body {
   border: none;
   background-color: transparent;
   box-sizing: border-box;
-  padding: 13px 20px;
+  padding: 9px 20px;
   width: 160px;
   min-height: 40px;
+}
+
+.services-link:hover {
+  color: #ffe17f;
+  background-color: #000000;
 }
 
 .services-link-current {
@@ -623,14 +628,13 @@ body {
 
 .about-service {
   width: 450px;
-  padding-right: 246px;
-  align-self: center;
+  padding: 73px 245px 0 0;
 }
 
 .delivery-service {
   background-image: url("../images/delivery-man.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: top 75px right;
 }
 
 .services-title {
@@ -641,7 +645,7 @@ body {
 .services-description {
   padding: 0;
   margin: 0;
-  width: 453px
+  width: 455px
 }
 
 .delivery-button {
@@ -705,13 +709,13 @@ body {
   width: 1160px;
   display: flex;
   margin: 0 auto;
-  margin-bottom: 88px;
-  padding-top: 47px;
+  margin-bottom: 70px;
+  padding-top: 45px;
   justify-content: space-between;
 }
 
 .about-us {
-  width: 520px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -770,13 +774,13 @@ body {
 
 .about-us-button {
   width: 270px;
-  padding: 13px 20px;
+  padding: 10px 20px;
   box-sizing: border-box;
 }
 
 .contact-us-button {
   width: 260px;
-  padding: 13px 20px;
+  padding: 10px 20px;
   box-sizing: border-box;
 }
 
@@ -849,7 +853,7 @@ body {
 }
 
 .subscription-form {
-  margin-top: 140px;
+  margin-top: 145px;
   display: flex;
   flex-wrap: wrap;
   width: 1160px;
@@ -863,8 +867,8 @@ body {
   background-color: transparent;
   border: none;
   border-bottom: 3px solid #c4c4c4;
-  padding: 11px 16px;
-  width: 557px;
+  padding: 10px 10px;
+  width: 550px;
   box-sizing: border-box;
 }
 
@@ -878,9 +882,9 @@ body {
   text-decoration: none;
   color: #000000;
   border: 3px solid #c4c4c4;
-  padding: 18px 40px;
+  padding: 10px 40px;
   box-sizing: border-box;
-  width: 253px;
+  width: 255px;
   cursor: pointer;
 }
 
@@ -890,8 +894,22 @@ body {
   border: 3px solid #000000;
 }
 
+.subscribe-button:active {
+  color: #444444;
+}
+
+.subscribe-button:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.subscribe-button:disabled {
+  opacity: 0.3;
+}
+
 .free-note {
   margin-left: auto;
+  margin-right: 10px;
   padding-left: 32px;
   background-image: url("../images/tick-icon.svg");
   background-repeat: no-repeat;
@@ -968,6 +986,22 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+  position: relative;
+}
+
+.footer-menu-link:hover {
+  color: #ffc700;
+}
+
+.footer-menu-link:hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #ffc700;
+  z-index: 1;
 }
 
 .footer-contacts-phone {
@@ -976,6 +1010,14 @@ body {
   color: #ffffff;
   justify-self: end;
   align-self: center;
+}
+
+.footer-contacts-phone:hover {
+  color: #ffc700;
+}
+
+.footer-contacts-phone:active {
+  opacity: 0.3;
 }
 
 .social-list {
@@ -997,6 +1039,15 @@ body {
   height: 40px;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.social-item:hover {
+  background-color: #ffc700;
+  opacity: 1;
+}
+
+.social-item:active {
+  opacity: 0.3;
 }
 
 .social-item:not(:last-child) {
@@ -1028,7 +1079,7 @@ body {
 }
 
 .html-logo {
-  color: #ffe17f;
+  color: #ffc700;
 }
 
 .html-logo:hover {
