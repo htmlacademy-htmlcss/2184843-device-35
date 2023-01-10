@@ -185,6 +185,7 @@ body {
 .user-menu-link {
   color: #000000;
   text-decoration: none;
+  max-width: 150px;
 }
 
 .menu-right {
@@ -301,6 +302,11 @@ body {
   margin: 0;
   margin-left: auto;
   gap: 45px;
+  max-width: 500px;
+}
+
+.navigation-item {
+  max-width: 200px;
 }
 
 .navigation-link {
@@ -323,6 +329,7 @@ body {
 
 .catalog-link {
   position: relative;
+  max-width: 280px;
 }
 
 .menu-button {
@@ -365,6 +372,13 @@ body {
 }
 
 .catalog-link:focus-within .submenu-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  gap: 30px;
+}
+
+.submenu-wrapper:hover {
   display: flex;
   flex-wrap: wrap;
   position: absolute;
@@ -723,7 +737,7 @@ body {
 .services-description {
   padding: 0;
   margin: 0;
-  width: 455px
+  width: 455px;
 }
 
 .delivery-button {
@@ -793,6 +807,7 @@ body {
 .about-us-wrapper {
   width: 1160px;
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   margin-bottom: 70px;
   padding-top: 45px;
@@ -1002,8 +1017,8 @@ body {
 }
 
 .free-note {
-  margin-left: auto;
-  margin-right: 10px;
+  max-width: 250px;
+  margin: 0 10px 0 auto;
   padding-left: 32px;
   background-image: url("../images/tick-icon.svg");
   background-repeat: no-repeat;
@@ -1099,7 +1114,7 @@ body {
   outline: 2px solid #af4fff;
 }
 
-.footer-menu-link:hover:after {
+.footer-menu-link:hover::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -1287,6 +1302,7 @@ body {
   height: 2px;
   margin-bottom: 8px;
   background-color: #dcdcdc;
+  width: 200px;
 }
 
 .range-bar {
@@ -1377,6 +1393,7 @@ body {
   margin: 0 0 30px 0;
   color: #000000;
   position: relative;
+  max-width: 260px;
 }
 
 .catalog-filter-title::before {
@@ -1498,6 +1515,7 @@ body {
 
 .sort-title {
   margin: 0;
+  max-width: 200px;
 }
 
 .select-control {
@@ -1513,6 +1531,7 @@ body {
   background-repeat: no-repeat;
   background-position: right 16px center;
   appearance: none;
+  width: 142px;
 }
 
 .button-sort-container {
@@ -1572,6 +1591,15 @@ body {
   gap: 40px;
   list-style-type: none;
   margin-bottom: 44px;
+}
+
+.new-product::after {
+  content: url("/images/new-icon.svg");
+  position: absolute;
+  top: 27px;
+  right: 27px;
+  width: 60px;
+  height: 60px;
 }
 
 .product-card {
@@ -1643,10 +1671,10 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   background-color: #ffffff;
-  border: 3px solid #E5E5E5;
+  border: 3px solid #e5e5e5;
   cursor: pointer;
   width: 100%;
-  padding: 18px 0;
+  padding: 18px 20px;
   margin-bottom: 44px;
 }
 
@@ -1775,8 +1803,12 @@ body {
   margin-right: auto;
 }
 
-.cart-link:hover ~ .popover,
+.cart-link:active ~ .popover,
 .cart-link:focus ~ .popover {
+  display: block;
+}
+
+.popover:hover {
   display: block;
 }
 
@@ -1994,7 +2026,7 @@ body {
 .delivery-form-field {
   width: 360px;
   padding: 20px;
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -2018,7 +2050,7 @@ body {
 }
 
 .error-text {
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;

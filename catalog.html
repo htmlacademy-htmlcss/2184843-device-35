@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Каталог товаров</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
 
   <body>
@@ -26,11 +27,58 @@
           <a class="user-menu-link logout-link" href="#">Выйти</a>
 
           <div class="user-menu-wrapper">
-            <a class="user-menu-link compare-link" href="#">Сравнить</a>
-            <a class="user-menu-link cart-link" href="#">
-              <span class="cart-amount">2</span>
-              Корзина
-            </a>
+            <ul class="menu-right">
+              <li class="menu-right-item">
+                <a class="user-menu-link compare-link" href="#">Сравнить</a>
+              </li>
+
+              <li class="menu-right-item">
+                <a class="user-menu-link cart-link" href="#">
+                  <span class="cart-amount">2</span>
+                  Корзина
+                </a>
+                <div class="popover popover-cart">
+                  <div class="popover-content">
+                    <h2 class="popover-title visually-hidden">Корзина</h2>
+
+                    <ul class="cart-items-list">
+                      <li class="cart-item">
+                        <img class="cart-item-image" src="images/product-1.jpg" width="40" height="40" alt="">
+                        <p class="cart-item-title">Любительская<br>селфи-палка</p>
+                        <button class="cart-item-button" type="button">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" fill="none"
+                            viewBox="0 0 10 11">
+                            <path fill="currentColor"
+                              d="m10 1.076-.91-.91L5 4.259.91.167 0 1.076l4.09 4.09L0 9.259l.91.909L5 6.076l4.09 4.09.91-.908-4.09-4.091L10 1.076Z" />
+                          </svg>
+                          <span class="visually-hidden">Удалить из корзины.</span>
+                        </button>
+                      </li>
+
+                      <li class="cart-item">
+                        <img class="cart-item-image" src="images/product-2.jpg" width="40" height="40" alt="">
+                        <p class="cart-item-title">Профессиональная<br>селфи-палка</p>
+                        <button class="cart-item-button" type="button">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" fill="none"
+                            viewBox="0 0 10 11">
+                            <path fill="currentColor"
+                              d="m10 1.076-.91-.91L5 4.259.91.167 0 1.076l4.09 4.09L0 9.259l.91.909L5 6.076l4.09 4.09.91-.908-4.09-4.091L10 1.076Z" />
+                          </svg>
+                          <span class="visually-hidden">Удалить из корзины.</span>
+                        </button>
+                      </li>
+                    </ul>
+
+                    <div class="cart-info">
+                      <p class="cart-info-amount cart-info-description">Товаров: <span class="amount-value">2</span></p>
+                      <p class="cart-info-sum cart-info-description">Сумма: <span class="sum-value">2000 ₽</span></p>
+                    </div>
+
+                    <a href="#" class="cart-open-button">Открыть корзину</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -45,31 +93,31 @@
               <div class="submenu-wrapper">
                 <ul class="submenu">
                   <li class="submenu-item">
-                    <a class="submenu-link" href="">Виртуальная реальность</a>
+                    <a class="submenu-link" href="#">Виртуальная реальность</a>
                   </li>
 
                   <li class="submenu-item">
-                    <a class="submenu-link submenu-link-current" href="">Моноподы для селфи</a>
+                    <a class="submenu-link submenu-link-current" href="#">Моноподы для селфи</a>
                   </li>
 
                   <li class="submenu-item">
-                    <a class="submenu-link" href="">Экшн-камеры</a>
-                  </li>
-                </ul>
-
-                <ul class="submenu">
-                  <li class="submenu-item">
-                    <a class="submenu-link" href="">Фитнес-браслеты</a>
-                  </li>
-
-                  <li class="submenu-item">
-                    <a class="submenu-link" href="">Умные часы</a>
+                    <a class="submenu-link" href="#">Экшн-камеры</a>
                   </li>
                 </ul>
 
                 <ul class="submenu">
                   <li class="submenu-item">
-                    <a class="submenu-link" href="">Квадрокоптеры</a>
+                    <a class="submenu-link" href="#">Фитнес-браслеты</a>
+                  </li>
+
+                  <li class="submenu-item">
+                    <a class="submenu-link" href="#">Умные часы</a>
+                  </li>
+                </ul>
+
+                <ul class="submenu">
+                  <li class="submenu-item">
+                    <a class="submenu-link" href="#">Квадрокоптеры</a>
                   </li>
                 </ul>
               </div>
@@ -245,7 +293,7 @@
                   <a class="button product-card-button" href="#">Подробнее</a>
                 </li>
 
-                <li class="product-card">
+                <li class="product-card new-product">
                   <a class="product-card-link" href="#">
                     <img class="product-card-image" src="images/product-2.jpg" width="360" height="380"
                       alt="Профессиональная селфи-палка.">
@@ -328,13 +376,13 @@
 
         <ul class="footer-menu">
           <li class="footer-menu-item">
-            <a class="footer-menu-link" href="">Доставка</a>
+            <a class="footer-menu-link" href="#">Доставка</a>
           </li>
           <li class="footer-menu-item">
-            <a class="footer-menu-link" href="">Гарантия</a>
+            <a class="footer-menu-link" href="#">Гарантия</a>
           </li>
           <li class="footer-menu-item">
-            <a class="footer-menu-link" href="">Контакты</a>
+            <a class="footer-menu-link" href="#">Контакты</a>
           </li>
         </ul>
 
