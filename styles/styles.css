@@ -176,12 +176,6 @@ body {
   background-color: #000000;
 }
 
-.user-menu-wrapper {
-  margin-left: auto;
-  max-width: 245px;
-  position: relative;
-}
-
 .user-menu-link {
   color: #000000;
   text-decoration: none;
@@ -189,12 +183,15 @@ body {
 }
 
 .menu-right {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+  width: 245px;
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 15px;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0 0 0 auto;
+  list-style-type: none;
+  position: relative;
 }
 
 .catalog-menu {
@@ -251,7 +248,7 @@ body {
   position: relative;
   background-image: url("../images/cart-icon.svg");
   background-repeat: no-repeat;
-  background-position: 17px;
+  background-position: 17px 2px;
 }
 
 .cart-link:hover {
@@ -295,18 +292,21 @@ body {
 }
 
 .right-navigation {
-  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
-  margin-left: auto;
+  justify-content: flex-end;
   gap: 45px;
-  max-width: 500px;
+  width: 600px;
+  padding: 0;
+  margin: 0 0 0 auto;
+  list-style-type: none;
 }
 
 .navigation-item {
-  max-width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+  max-width: 600px;
 }
 
 .navigation-link {
@@ -431,13 +431,11 @@ body {
 /* Слайдер */
 .slider {
   width: 1160px;
-  margin: 0 auto;
-  margin-bottom: 70px;
+  margin: 0 auto 70px;
 }
 
 .slider-image {
-  margin-right: 40px;
-  margin-top: -5px;
+  margin: -7px 0 0 0;
 }
 
 .slider-number {
@@ -454,6 +452,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   position: relative;
+  margin-bottom: 18px;
 }
 
 .slider-product::before {
@@ -516,7 +515,6 @@ body {
   justify-content: center;
   padding: 0;
   margin: 0;
-  margin-top: -30px;
   list-style-type: none;
   position: relative;
   z-index: 1;
@@ -524,6 +522,7 @@ body {
 
 .slider-pagination-item {
   margin: 0 10px;
+  display: flex;
 }
 
 .slider-pagination-button {
@@ -601,10 +600,10 @@ body {
 .categories-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 40px;
   list-style-type: none;
   padding: 0;
   margin: 0;
-  justify-content: space-between;
 }
 
 .categories-list-item {
@@ -621,9 +620,35 @@ body {
 }
 
 .categories-img {
-  background-color: #ffe17f;
+  width: 160px;
+  height: 160px;
   display: block;
+  background-color: #ffe17f;
   margin-bottom: 33px;
+}
+
+.vr-category {
+  background: url("../images/index-catalog-image-1.svg") no-repeat center #ffe17f;
+}
+
+.monopods-category {
+  background: url("../images/index-catalog-image-2.svg") no-repeat center #ffe17f;
+}
+
+.action-cameras-category {
+  background: url("../images/index-catalog-image-3.svg") no-repeat center #ffe17f;
+}
+
+.fitness-bracelets-category {
+  background: url("../images/index-catalog-image-4.svg") no-repeat center #ffe17f;
+}
+
+.smartwatches-category {
+  background: url("../images/index-catalog-image-5.svg") no-repeat center #ffe17f;
+}
+
+.quadrocopters-category {
+  background: url("../images/index-catalog-image-6.svg") no-repeat center #ffe17f;
 }
 
 .categories-link {
@@ -638,18 +663,17 @@ body {
 
 /* Услуги */
 .services {
-  margin-bottom: 70px;
+  margin-bottom: 140px;
   position: relative;
-  min-height: 390px;
 }
 
 .services::after {
   content: "";
   background-color: #f0f0f0;
   width: 100%;
-  height: 290px;
+  height: calc(100% - 30px);
   position: absolute;
-  bottom: 0;
+  top: 103px;
   z-index: -1;
 }
 
@@ -662,7 +686,7 @@ body {
 
 .services-list {
   list-style-type: none;
-  padding: 65px 0 65px 0;
+  padding: 65px 0;
   margin: 0 115px 0 0;
   position: relative;
   width: 287px;
@@ -712,21 +736,15 @@ body {
 }
 
 .delivery-service {
-  background-image: url("../images/delivery-man.svg");
-  background-repeat: no-repeat;
-  background-position: top 75px right;
+  background: url("../images/delivery-man.svg") no-repeat top 78px right;
 }
 
 .guarantee-service {
-  background-image: url("../images/guarantee-icon.svg");
-  background-repeat: no-repeat;
-  background-position: top 75px right;
+  background: url("../images/guarantee-icon.svg") no-repeat top 78px right;
 }
 
 .credit-service {
-  background-image: url("../images/credit-icon.svg");
-  background-repeat: no-repeat;
-  background-position: top 75px right;
+  background: url("../images/credit-icon.svg") no-repeat top 78px right;
 }
 
 .services-title {
@@ -736,7 +754,7 @@ body {
 
 .services-description {
   padding: 0;
-  margin: 0;
+  margin: 0 0 20px;
   width: 455px;
 }
 
@@ -1035,7 +1053,7 @@ body {
 .footer-wrapper {
   display: grid;
   width: 1160px;
-  grid-template-columns: 240px 444px 238px;
+  grid-template-columns: 240px 500px 180px;
   gap: 25px 119px;
   margin: 0 auto;
   padding: 62px 0;
@@ -1063,7 +1081,6 @@ body {
 }
 
 .footer-contacts-address {
-  width: 240px;
   grid-column: 1/2;
   font-style: normal;
   font-size: 16px;
@@ -1071,6 +1088,17 @@ body {
   line-height: 20px;
   color: #ffffff;
   text-decoration: none;
+  position: relative;
+}
+
+.footer-contacts-address::after {
+  content: "";
+  width: 80px;
+  height: 7px;
+  background-color: #ffc700;
+  position: absolute;
+  left: 0;
+  bottom: -75px;
 }
 
 .about-text {
@@ -1085,8 +1113,9 @@ body {
 .footer-menu {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
   list-style-type: none;
-  justify-content: space-between;
   padding: 0;
   margin: 0;
 }
@@ -1149,11 +1178,10 @@ body {
   grid-column: 2/3;
   display: flex;
   flex-wrap: wrap;
+  gap: 15px;
   padding: 0;
-  margin: 0;
-  margin-top: 20px;
+  margin: 20px 0 0 145px;
   list-style-type: none;
-  justify-self: center;
   align-items: center;
 }
 
@@ -1179,10 +1207,6 @@ body {
   outline: 2px solid #af4fff;
 }
 
-.social-item:not(:last-child) {
-  margin-right: 15px;
-}
-
 .social-link {
   display: block;
   min-width: 40px;
@@ -1201,7 +1225,7 @@ body {
 .html-link {
   grid-column: 3/-1;
   justify-self: end;
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 .html-logo {
@@ -1294,7 +1318,7 @@ body {
 
 /* Range */
 .range {
-  margin: 0 0 15px 0;
+  margin: 0;
 }
 
 .range-scale {
@@ -1377,11 +1401,16 @@ body {
   margin: 0;
 }
 
+.catalog-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
 .catalog-filter-group {
   border: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 35px;
 }
 
 .catalog-filter-title {
@@ -1519,19 +1548,17 @@ body {
 }
 
 .select-control {
+  width: 145px;
+  padding: 0 30px 0 0;
   border: none;
-  background-color: transparent;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
   color: #000000;
   cursor: pointer;
-  background-image: url("../images/select-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: right 16px center;
+  background: url("../images/select-arrow.svg") no-repeat right 13px center;
   appearance: none;
-  width: 142px;
 }
 
 .button-sort-container {
