@@ -17,21 +17,12 @@
 
         <div class="user-menu">
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden" for="site-search">Поиск</label>
-            <input class="search-input" type="search" id="site-search" name="Search" placeholder="Поиск по сайту"
-              required>
+            <label class="search-form-label">
+              <span class="visually-hidden">Поиск.</span>
+              <input class="search-input" type="search" name="Search" placeholder="Поиск по сайту" required>
+            </label>
             <button class="search-form-button" type="submit">Найти</button>
           </form>
-
-
-          <!--           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label>
-              <input class="search-input" type="search" id="site-search" name="Search" placeholder="Поиск по сайту"
-                required>
-            </label>
-            <span class="visually-hidden">Поиск.</span>
-            <button class="search-form-button" type="submit">Найти</button>
-          </form> -->
 
           <a class="user-menu-link login-link user-name" href="#">Коля Петухов</a>
           <a class="user-menu-link logout-link" href="#">Выйти</a>
@@ -52,9 +43,11 @@
 
                   <ul class="cart-items-list">
                     <li class="cart-item">
-                      <img class="cart-item-image" src="images/product-1.jpg" width="40" height="40"
-                        alt="Любительская селфи-палка.">
-                      <p class="cart-item-title">Любительская<br>селфи-палка</p>
+                      <a class="cart-item-link" href="#">
+                        <img class="cart-item-image" src="images/product-1.jpg" width="40" height="40"
+                          alt="Любительская селфи-палка.">
+                        <p class="cart-item-title">Любительская<br>селфи-палка</p>
+                      </a>
                       <button class="cart-item-button" type="button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" fill="none" viewBox="0 0 10 11"
                           aria-hidden="true" focusable="false">
@@ -66,9 +59,11 @@
                     </li>
 
                     <li class="cart-item">
-                      <img class="cart-item-image" src="images/product-2.jpg" width="40" height="40"
-                        alt="Профессиональная селфи-палка.">
-                      <p class="cart-item-title">Профессиональная<br>селфи-палка</p>
+                      <a class="cart-item-link" href="#">
+                        <img class="cart-item-image" src="images/product-2.jpg" width="40" height="40"
+                          alt="Профессиональная селфи-палка.">
+                        <p class="cart-item-title">Профессиональная<br>селфи-палка</p>
+                      </a>
                       <button class="cart-item-button" type="button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" fill="none" viewBox="0 0 10 11"
                           aria-hidden="true" focusable="false">
@@ -275,8 +270,8 @@
               <h3 class="sort-title filter-title">Сортировка:</h3>
               <select class="select-control">
                 <option value="popular">Популярные</option>
-                <option value="cheap">Сначала дешёвое</option>
-                <option value="expensive">Сначала дорогое</option>
+                <option value="cheap">Дешёвое</option>
+                <option value="expensive">Дорогое</option>
               </select>
 
               <div class="button-sort-container">
@@ -377,7 +372,7 @@
 
     <footer class="page-footer">
       <div class="footer-wrapper">
-        <a href="index.html">
+        <a class="footer-logo-link" href="index.html">
           <img class="footer-logo" src="images/logo-yellow.svg" width="145" height="36" alt="Логотип «Девайс».">
         </a>
         <address class="footer-contacts-address">
