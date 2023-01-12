@@ -92,8 +92,7 @@ body {
 .header {
   color: #000000;
   background-color: #ffe17f;
-  margin: 0 auto;
-  margin-top: 40px;
+  margin: 40px auto 0;
   width: 1160px;
   position: relative;
   z-index: 2;
@@ -593,8 +592,7 @@ body {
 /* Категории */
 .categories {
   width: 1160px;
-  margin: 0 auto;
-  margin-bottom: 80px;
+  margin: 0 auto 80px;
 }
 
 .categories-list {
@@ -761,8 +759,7 @@ body {
 .delivery-button {
   display: block;
   width: 1160px;
-  margin: 0 auto;
-  margin-bottom: 70px;
+  margin: 0 auto 70px;
   padding: 40px 200px;
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
@@ -826,8 +823,7 @@ body {
   width: 1160px;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
-  margin-bottom: 70px;
+  margin: 0 auto 70px;
   padding-top: 45px;
   justify-content: space-between;
 }
@@ -925,8 +921,7 @@ body {
 
 .contacts-address {
   font-style: normal;
-  margin: 0;
-  margin-top: -15px;
+  margin: -15px 0 0;
   padding: 0;
 }
 
@@ -943,8 +938,7 @@ body {
 
 .contacts-schedule {
   padding: 0;
-  margin: 0;
-  margin-top: -15px;
+  margin: -15px 0 0;
   list-style-type: none;
 }
 
@@ -1614,10 +1608,9 @@ body {
   display: grid;
   grid-template-columns: 360px 360px;
   padding: 0;
-  margin: 0;
+  margin: 0 0 44px 0;
   gap: 40px;
   list-style-type: none;
-  margin-bottom: 44px;
 }
 
 .new-product::after {
@@ -1826,8 +1819,7 @@ body {
   bottom: 100%;
   left: 0;
   right: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .cart-link:active ~ .popover,
@@ -2033,8 +2025,7 @@ body {
 }
 
 .delivery-form .field-group {
-  margin: 0;
-  margin-bottom: 2px;
+  margin: 0 0 2px 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -2140,8 +2131,7 @@ body {
 /* Тултип */
 .tooltip {
   position: absolute;
-  margin-top: -2px;
-  margin-left: 10px;
+  margin: -2px 0 0 10px;
 }
 
 .tooltip-toggle {
