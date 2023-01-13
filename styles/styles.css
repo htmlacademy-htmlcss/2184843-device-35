@@ -395,9 +395,23 @@ body {
   outline: 2px solid #af4fff;
 }
 
-.catalog-link {
+.catalog-item {
   position: relative;
   max-width: 280px;
+}
+
+.catalog-link:focus {
+  outline: transparent;
+}
+
+.catalog-link:focus::after {
+  content: "";
+  width: calc(100% + 70px);
+  height: calc(100% + 20px);
+  border: 2px solid #af4fff;
+  position: absolute;
+  top: -11px;
+  left: -5px;
 }
 
 .menu-button {
@@ -439,7 +453,7 @@ body {
   gap: 30px;
 }
 
-.catalog-link:focus-within .submenu-wrapper {
+.catalog-item:focus-within .submenu-wrapper {
   display: flex;
   flex-wrap: wrap;
   position: absolute;
@@ -765,7 +779,7 @@ body {
 
 /* Услуги */
 .services {
-  margin-bottom: 144px;
+  margin-bottom: 141px;
   position: relative;
 }
 
@@ -964,7 +978,7 @@ body {
   height: 7px;
   background-color: #000000;
   position: absolute;
-  top: -50px;
+  top: -48px;
 }
 
 /* Способы доставки*/
@@ -1118,6 +1132,10 @@ body {
 
 .email-field:invalid {
   border-bottom: 3px solid #ff3d3d;
+}
+
+.email-field:invalid:placeholder-shown {
+  border-color: #c4c4c4;
 }
 
 .email-field:disabled {
@@ -2047,6 +2065,10 @@ body {
   margin: 0 auto;
 }
 
+.cart:focus-within .popover {
+  display: block;
+}
+
 .cart-link:active ~ .popover,
 .cart-link:focus-within ~ .popover {
   display: block;
@@ -2313,6 +2335,10 @@ body {
 
 .delivery-form-field:invalid {
   border: 2px solid #ff3d3d;
+}
+
+.delivery-form-field:invalid:placeholder-shown {
+  border: none;
 }
 
 .delivery-form-field:disabled {

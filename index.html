@@ -27,7 +27,7 @@
             <li class="menu-right-item">
               <a class="user-menu-link compare-link" href="#">Сравнить</a>
             </li>
-            <li class="menu-right-item">
+            <li class="menu-right-item cart">
               <a class="user-menu-link cart-link" href="#">
                 <span class="cart-amount">2</span>
                 Корзина
@@ -79,8 +79,8 @@
         </div>
         <nav class="navigation">
           <ul class="catalog-menu">
-            <li class="catalog-link">
-              <a class="navigation-link" href="catalog.html">Каталог товаров</a>
+            <li class="catalog-item">
+              <a class="navigation-link catalog-link" href="catalog.html">Каталог товаров</a>
               <button class="menu-button" type="button">
                 <span class="visually-hidden">Раскрыть подменю.</span>
               </button>
@@ -430,7 +430,7 @@
             <div class="field-group">
               <label class="delivery-label" for="delivery-name">Ваше имя:</label>
               <input class="delivery-form-field field modal-name-field" type="text" id="delivery-name"
-                name="delivery-name" placeholder="Введите имя">
+                name="delivery-name" placeholder="Введите имя" required>
             </div>
             <div class="field-group">
               <label class="delivery-label" for="delivery-email">Ваш e-mail:</label>
@@ -441,7 +441,7 @@
             <div class="field-group">
               <label class="delivery-label" for="delivery-text">Что нужно привезти:</label>
               <input class="delivery-form-field field delivery-text-field" type="text" id="delivery-text"
-                name="delivery-text" placeholder="В свободной форме">
+                name="delivery-text" placeholder="В свободной форме" required>
             </div>
             <div class="field-group">
               <span class="delivery-label">
