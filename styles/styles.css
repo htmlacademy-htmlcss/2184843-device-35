@@ -1433,6 +1433,15 @@ body {
   outline: 2px solid #af4fff;
 }
 
+.breadcrumbs-link-current {
+  cursor: default;
+}
+
+.breadcrumbs-link-current:hover {
+  opacity: 1;
+}
+
+
 /* Фильтры */
 .filter-title {
   font-family: "Raleway", sans-serif;
@@ -2314,13 +2323,13 @@ body {
   color: #000000;
 }
 
-.name-field {
+.modal-name-field {
   background-image: url("../images/human-icon.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
 }
 
-.email-field {
+.modal-email-field {
   background-image: url("../images/email-icon.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
